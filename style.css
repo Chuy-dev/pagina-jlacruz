@@ -6,6 +6,9 @@
   --black: #000000;
   --background-header: #3498db;
   --background-us: #5dade2;
+  --text-title: #1f618d;
+  --text-subtitle: #3498db;
+  --text-info: #5dade2;
 }
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -108,27 +111,84 @@ body {
       }
     }
   }
-  .contact {
-    margin-top: 20px;
+  .us {
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-    .text-contact {
-      width: 35%;
+    justify-content: center;
+    gap: 60px;
+    .us-img {
+      width: 500px;
+      img {
+        height: 450px;
+        border-radius: 20px;
+      }
+    }
+    .us-text {
+      width: 576px;
       h2 {
-        color: var(--background-header);
+        color: var(--text-title);
       }
       p {
-        color: var(--background-header);
+        color: var(--text-subtitle);
       }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-          margin: 15px 0;
-          color: var(--background-us);
+      ul li {
+        color: var(--text-info);
+      }
+      .container-btn {
+        cursor: unset;
+        .btn {
+          height: 40px;
+          width: 130px;
+          margin-top: 30px;
+          border: none;
+          border-radius: 10%;
+          background-color: var(--btn);
+          color: var(--white);
+          font-size: 16px;
+          cursor: pointer;
         }
+        .btn:hover {
+          color: var(--hover);
+          background-color: var(--hover-btn);
+        }
+      }
+    }
+  }
+  .contact {
+    .title {
+      text-align: center;
+      margin: 50px 0;
+      color: var(--text-title);
+      font-size: 40px;
+    }
+    .contact-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      .text-contact {
+        width: 35%;
+        h2 {
+          color: var(--text-subtitle);
+        }
+        p {
+          color: var(--text-subtitle);
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            margin: 15px 0;
+            color: var(--text-info);
+          }
+        }
+      }
+    }
+    .maps {
+      iframe {
+        border-radius: 20px;
       }
     }
   }
