@@ -15,69 +15,73 @@
     <header class="header">
       <img src="./img/logo.png" alt="Logo" />
       <nav class="navbar">
-        <a href="/">Inicio</a>
-        <a href="/">Nosotros</a>
-        <a href="/">Servicios</a>
-        <a href="/">Proyectos</a>
-        <a href="/">Contactos</a>
+        <a href="#header-us">Inicio</a>
+        <a href="#us">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contactos</a>
       </nav>
       <a href="/" class="container-btn">
         <button class="btn">Contáctanos</button>
       </a>
     </header>
     <main class="main">
-      <section class="header-us">
-        <div class="text">
-          <h1>J. LACRUZ C.A.</h1>
-          <h3>Multiservicios generales</h3>
-          <p>
-            Soluciones integrales para tu hogar y negocio. Expertos en
-            mantenimiento y limpieza. Con J. Lacruz C.A., ¡Tu espacio siempre
-            lucirá impecable!
-          </p>
-          <p>¡Contáctanos ahora y solicita tu presupuesto sin compromiso!</p>
-          <a href="/" class="container-btn">
-            <button class="btn">Contáctanos</button>
-          </a>
-        </div>
-        <div class="img">
-          <img
-            src="./img/section-header-us.png"
-            alt="Imagen de edificio de oficinas"
-          />
-        </div>
-      </section>
-      <section class="us">
-        <div class="us-img">
-          <img src="./img/us.jpg" alt="Imagen de trabajadores" />
-        </div>
-        <div class="us-text">
-          <h2>
-            Tu hogar, tu negocio, nuestro cuidado: Experiencia y dedicación en
-            cada servicio.
-          </h2>
-          <p>
-            En J. Lacruz C.A., somos expertos en brindar soluciones integrales
-            de limpieza y mantenimiento.
-          </p>
-          <ul>
-            <li>Experiencia y conocimiento profundo</li>
-            <li>Servicio integral y personalizado</li>
-            <li>Compromiso con la calidad y la satisfacción del cliente</li>
-            <li>Equipo de profesionales altamente cualificados</li>
-          </ul>
-          <a href="/" class="container-btn">
-            <button class="btn">Contáctanos</button>
-          </a>
+      <section class="header-us" id="header-us">
+        <div class="opacity"></div>
+        <div class="container-header">
+          <div class="text">
+            <h1>J. LACRUZ C.A.</h1>
+            <h3>Multiservicios generales</h3>
+            <p>
+              Soluciones integrales para tu hogar y negocio. Expertos en
+              mantenimiento y limpieza. Con J. Lacruz C.A., ¡Tu espacio siempre
+              lucirá impecable!
+            </p>
+            <p>¡Contáctanos ahora y solicita tu presupuesto sin compromiso!</p>
+            <a href="/" class="container-btn">
+              <button class="btn">Contáctanos</button>
+            </a>
+          </div>
+          <div class="img">
+            <img
+              src="./img/section-header-us.png"
+              alt="Imagen de edificio de oficinas"
+            />
+          </div>
         </div>
       </section>
-      <section class="services">
+      <section class="us" id="us">
+        <h2 class="title">Nosotros</h2>
+        <div class="container-us">
+          <div class="us-img">
+            <img src="./img/us.jpg" alt="Imagen de trabajadores" />
+          </div>
+          <div class="us-text">
+            <h2>
+              Tu hogar, tu negocio, nuestro cuidado: Experiencia y dedicación en
+              cada servicio.
+            </h2>
+            <p>
+              En J. Lacruz C.A., somos expertos en brindar soluciones integrales
+              de limpieza y mantenimiento.
+            </p>
+            <ul>
+              <li>Experiencia y conocimiento profundo</li>
+              <li>Servicio integral y personalizado</li>
+              <li>Compromiso con la calidad y la satisfacción del cliente</li>
+              <li>Equipo de profesionales altamente cualificados</li>
+            </ul>
+            <a href="/" class="container-btn">
+              <button class="btn">Contáctanos</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
         <h2 class="title">Nuestros servicios</h2>
         <div class="container-card">
-          <article class="card">
-            <div>
-              <img src="./img/aseo-limpieza.jpg" alt="Aseo y Limpieza" />
-            </div>
+          <article class="card services-back-one">
+            <div class="back-tittle"></div>
             <h3>Aseo y Limpieza:</h3>
             <p>
               "Transformamos tus espacios en ambientes limpios y saludables.
@@ -85,13 +89,8 @@
               mantenimiento".
             </p>
           </article>
-          <article class="card">
-            <div>
-              <img
-                src="./img/sistemas-hidraulicos.jpg"
-                alt="Mantenimiento de Sistemas Hidroneumático"
-              />
-            </div>
+          <article class="card services-back-two">
+            <div class="back-tittle"></div>
             <h3>Mantenimiento de Sistemas Hidroneumático:</h3>
             <p>
               "Evita sorpresas desagradables con nuestro servicio de
@@ -99,13 +98,8 @@
               suministro de agua constante y de calidad"
             </p>
           </article>
-          <article class="card">
-            <div>
-              <img
-                src="./img/mantenimiento.jpg"
-                alt="Mantenimiento de salas de baño"
-              />
-            </div>
+          <article class="card services-back-three">
+            <div class="back-tittle"></div>
             <h3>Mantenimiento de salas de baño:</h3>
             <p>
               "Disfruta de un baño impecable y funcional. Realizamos limpieza
@@ -113,13 +107,8 @@
               duchas".
             </p>
           </article>
-          <article class="card">
-            <div>
-              <img
-                src="./img/fumigador.png"
-                alt="Fumigación contra todo tipo de plagas"
-              />
-            </div>
+          <article class="card services-back-four">
+            <div class="back-tittle"></div>
             <h3>Fumigación contra todo tipo de plagas:</h3>
             <p>
               "Un ambiente libre de plagas es fundamental para tu salud y
@@ -128,11 +117,11 @@
             </p>
           </article>
         </div>
-        <a href="/" class="container-btn">
+        <a href="./services.html" class="container-btn">
           <button class="btn">Mas Servicios</button>
         </a>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="title">Proyectos Realizados</h2>
         <div class="container-photo">
           <div class="img">
@@ -161,7 +150,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="title">Contacto</h2>
         <article class="contact-container">
           <div class="text-contact">

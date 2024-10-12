@@ -14,6 +14,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -64,94 +65,119 @@ body {
 }
 .main {
   .header-us {
-    background-color: var(--background-us);
+    background-image: url(./img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .text {
-      width: 30%;
-      color: var(--white);
-      h1 {
-        font-size: 50px;
-        margin: 0;
-      }
-      h3 {
-        font-size: 20px;
-        margin-top: 0;
-      }
-      p {
-        font-size: 16px;
-      }
-      .container-btn {
-        cursor: unset;
-        .btn {
-          height: 40px;
-          width: 130px;
-          border: none;
-          border-radius: 10%;
-          background-color: var(--btn);
-          color: var(--white);
-          font-size: 16px;
-          cursor: pointer;
-        }
-        .btn:hover {
-          color: var(--hover);
-          background-color: var(--hover-btn);
-        }
-      }
+    .opacity {
+      position: absolute;
+      width: 100%;
+      height: 500px;
+      background-color: var(--black);
+      opacity: 0.4;
     }
-    .img {
-      width: 40%;
+    .container-header {
+      position: relative;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
-      img {
-        width: 400px;
-        height: 400px;
+      .text {
+        margin-top: 100px;
+        width: 30%;
+        color: var(--white);
+        h1 {
+          font-size: 50px;
+          margin: 0;
+        }
+        h3 {
+          font-size: 20px;
+          margin-top: 0;
+        }
+        p {
+          font-size: 16px;
+        }
+        .container-btn {
+          cursor: unset;
+          .btn {
+            height: 40px;
+            width: 130px;
+            border: none;
+            border-radius: 10%;
+            background-color: var(--btn);
+            color: var(--white);
+            font-size: 16px;
+            cursor: pointer;
+          }
+          .btn:hover {
+            color: var(--hover);
+            background-color: var(--hover-btn);
+          }
+        }
+      }
+      .img {
+        margin-top: 50px;
+
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          width: 400px;
+          height: 400px;
+        }
       }
     }
   }
   .us {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    .us-img {
-      width: 500px;
-      img {
-        height: 450px;
-        border-radius: 20px;
-      }
+    .title {
+      text-align: center;
+      margin: 100px 0 30px 0;
+      color: var(--text-title);
+      font-size: 40px;
     }
-    .us-text {
-      width: 576px;
-      h2 {
-        color: var(--text-title);
-      }
-      p {
-        color: var(--text-subtitle);
-      }
-      ul li {
-        color: var(--text-info);
-      }
-      .container-btn {
-        cursor: unset;
-        .btn {
-          height: 40px;
-          width: 130px;
-          margin-top: 30px;
-          border: none;
-          border-radius: 10%;
-          background-color: var(--btn);
-          color: var(--white);
-          font-size: 16px;
-          cursor: pointer;
+    .container-us {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      .us-img {
+        width: 500px;
+        img {
+          height: 450px;
+          border-radius: 20px;
         }
-        .btn:hover {
-          color: var(--hover);
-          background-color: var(--hover-btn);
+      }
+      .us-text {
+        width: 576px;
+        h2 {
+          color: var(--text-title);
+        }
+        p {
+          color: var(--text-subtitle);
+        }
+        ul li {
+          color: var(--text-info);
+        }
+        .container-btn {
+          cursor: unset;
+          .btn {
+            height: 40px;
+            width: 130px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 10%;
+            background-color: var(--btn);
+            color: var(--white);
+            font-size: 16px;
+            cursor: pointer;
+          }
+          .btn:hover {
+            color: var(--hover);
+            background-color: var(--hover-btn);
+          }
         }
       }
     }
@@ -171,34 +197,80 @@ body {
       width: 90%;
       justify-content: center;
       gap: 10px;
+      .services-back-one {
+        background-image: url(./img/aseo-limpieza.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .services-back-two {
+        background-image: url(./img/sistemas-hidraulicos.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .services-back-three {
+        background-image: url(./img/mantenimiento.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .services-back-four {
+        background-image: url(./img/fumigador.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
       .card {
         width: 25%;
+        height: 400px;
         border-radius: 20px;
         background-color: var(--background-card);
         color: var(--white);
         cursor: pointer;
-        div {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+        .back-tittle {
           width: 100%;
-          height: 200px;
-          img {
-            max-height: 200px;
-            max-width: 100%;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-            border-radius: 20px 20px 0 0;
-          }
+          height: 100px;
+          background-color: var(--background-card);
+          border-radius: 0 0 20px 20px;
+          opacity: 0.5;
+          transition: all 1s;
         }
         h3 {
           padding: 0 18px;
+          position: absolute;
+          margin-bottom: 50px;
+          text-align: center;
+          transition: all 1s;
         }
         p {
           padding: 0 18px;
+          display: none;
         }
       }
       .card:hover {
         box-shadow: 9px 9px 17px 0px rgba(93, 173, 226, 1);
-        width: 26%;
+        align-items: center;
+        .back-tittle {
+          transition: all 2s;
+          height: 100%;
+          border-radius: 20px;
+          opacity: 0.8;
+        }
+        h3 {
+          position: absolute;
+          padding-bottom: 60px;
+          transition: all 1s;
+        }
+        p {
+          display: block;
+          position: absolute;
+          padding-top: 60px;
+        }
       }
     }
     .container-btn {
@@ -347,6 +419,27 @@ body {
           margin-right: 8px;
         }
       }
+    }
+  }
+}
+
+.container-page-services {
+  .container-btn {
+    cursor: unset;
+    .btn {
+      margin: 80px;
+      height: 40px;
+      width: 130px;
+      border: none;
+      border-radius: 10%;
+      background-color: var(--btn);
+      color: var(--white);
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      color: var(--hover);
+      background-color: var(--hover-btn);
     }
   }
 }
