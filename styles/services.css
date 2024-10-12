@@ -1,0 +1,201 @@
+:root {
+  --btn: #0d47a1;
+  --hover: #5dade2;
+  --hover-btn: #1f618d;
+  --white: #fcfbfb;
+  --black: #000000;
+  --background-header: #3498db;
+  --background-us: #5dade2;
+  --text-title: #1f618d;
+  --text-subtitle: #3498db;
+  --text-info: #5dade2;
+  --background-card: #3498db;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-page-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .title {
+    text-align: center;
+    font-size: 45px;
+    color: var(--text-title);
+    margin: 40px 0 20px;
+  }
+  .subtitle {
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 55px;
+    color: var(--text-subtitle);
+  }
+  .container-card {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    .services-back-one {
+      background-image: url(../img/aseo-limpieza.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-two {
+      background-image: url(../img/sistemas-hidraulicos.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-three {
+      background-image: url(../img/mantenimiento.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-four {
+      background-image: url(../img/fumigador.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-five {
+      background-image: url(../img/jardineria.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-six {
+      background-image: url(../img/escombros.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-seven {
+      background-image: url(../img/acarreo.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-eight {
+      background-image: url(../img/botellones.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-nine {
+      background-image: url(../img/tanques.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .services-back-ten {
+      background-image: url(../img/limpieza.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .card {
+      width: 100%;
+      height: 300px;
+      border-radius: 20px;
+      background-color: var(--background-card);
+      color: var(--white);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      position: relative;
+      .back-tittle {
+        width: 100%;
+        height: 100px;
+        background-color: var(--background-card);
+        border-radius: 0 0 20px 20px;
+        opacity: 0.5;
+        transition: all 1s;
+      }
+      h3 {
+        padding: 0 18px;
+        position: absolute;
+        margin-bottom: 50px;
+        text-align: center;
+        transition: all 1s;
+      }
+      p {
+        padding: 0 18px;
+        display: none;
+      }
+    }
+    .card:hover {
+      box-shadow: 9px 9px 17px 0px rgba(93, 173, 226, 1);
+      align-items: center;
+      .back-tittle {
+        transition: all 2s;
+        height: 100%;
+        border-radius: 20px;
+        opacity: 0.8;
+      }
+      h3 {
+        position: absolute;
+        padding-bottom: 60px;
+        margin-bottom: 100px;
+        transition: all 1s;
+      }
+      p {
+        display: block;
+        position: absolute;
+        padding-top: 60px;
+      }
+    }
+    .item-one {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .item-two {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+  }
+  .container-btn {
+    cursor: unset;
+    margin: 10px 0 30px;
+    .btn {
+      height: 40px;
+      width: 130px;
+      margin-top: 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--btn);
+      color: var(--white);
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      color: var(--hover);
+      background-color: var(--hover-btn);
+    }
+  }
+}
+.container-back {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  .back {
+    width: 100%;
+    height: 100px;
+    background-color: var(--hover);
+    position: fixed;
+  }
+}

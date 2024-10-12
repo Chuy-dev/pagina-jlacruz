@@ -65,7 +65,7 @@ body {
 }
 .main {
   .header-us {
-    background-image: url(./img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,25 +198,25 @@ body {
       justify-content: center;
       gap: 10px;
       .services-back-one {
-        background-image: url(./img/aseo-limpieza.jpg);
+        background-image: url(../img/aseo-limpieza.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       .services-back-two {
-        background-image: url(./img/sistemas-hidraulicos.jpg);
+        background-image: url(../img/sistemas-hidraulicos.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       .services-back-three {
-        background-image: url(./img/mantenimiento.jpg);
+        background-image: url(../img/mantenimiento.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       .services-back-four {
-        background-image: url(./img/fumigador.png);
+        background-image: url(../img/fumigador.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
